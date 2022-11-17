@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#282C2C"
+    android:background="#3F4545"
     tools:context=".MusicPlayerActivity">
 <TextView
     android:layout_width="match_parent"
