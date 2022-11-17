@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#282C2C">
+    android:background="@drawable/unknown"
+    android:src="@drawable/unknown"
+    >
 
     <TextView
         android:id="@+id/songs_text"
@@ -14,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:padding="20dp"
         android:text="Треки"
-        android:textColor="#D1D1D1"
+        android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +38,7 @@
         android:layout_below="@+id/songs_text"
         android:padding="15dp"
 
-        android:background="#282C2C"
+        android:background="#00282C2C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/songs_text" />

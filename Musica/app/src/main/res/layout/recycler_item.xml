@@ -4,13 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#3D4242"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
+
+    android:background="@drawable/vishny"
 
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -46,7 +47,8 @@
         android:maxLines="1"
         android:ellipsize="end"
         android:textSize="10pt"
-        tools:textColor="#D1D1D1" ></TextView>
+
+        tools:textColor="#050101" ></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
