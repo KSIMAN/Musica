@@ -8,9 +8,11 @@
     android:background="@drawable/unknown"
     android:src="@drawable/unknown"
     android:textColor="@color/black"
+    android:fontFamily="@font/gnyrwn971"
     >
 
     <TextView
+        android:fontFamily="@font/gnyrwn971"
         android:id="@+id/songs_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +41,7 @@
         android:layout_below="@+id/songs_text"
         android:padding="15dp"
         android:textColor="@color/black"
-
+        android:fontFamily="@font/gnyrwn971"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +56,7 @@
         android:layout_marginLeft="181dp"
         android:layout_marginEnd="182dp"
         android:layout_marginRight="182dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycler_view" />

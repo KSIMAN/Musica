@@ -16,10 +16,11 @@
     android:color="#01010C"
     android:dashWidth="20dp"
     android:dashGap="3dp"
-    android:
-    android:background="@drawable/vishny"
 
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@drawable/bkacks"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingClass">
 
     <ImageView
         android:id="@+id/icon_view"
@@ -48,13 +49,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
         tools:text="Music"
-        android:padding="1dp"
-        android:layout_marginLeft="50dp"
+        android:padding="2dp"
+        android:layout_marginLeft="70dp"
         android:maxLines="1"
         android:ellipsize="end"
         android:textSize="10pt"
-
-        android:textColor="#050101" ></TextView>
+        android:fontFamily="@font/gnyrwn971"
+        android:textColor="#C5CDCD" ></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
