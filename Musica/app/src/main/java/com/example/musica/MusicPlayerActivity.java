@@ -47,11 +47,11 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     if(seekBar.getProgress() == seekBar.getMax())
                         PlayNextSong();
                 }
-                new Handler().postDelayed(this, 100);
                 if(mediaPlayer.isPlaying())
-                {
+                    pausePlay.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24);
+                else pausePlay.setImageResource(R.drawable.ic_baseline_play_circle_outline_24);
+                new Handler().postDelayed(this, 100);
 
-                }
             }
         });
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
@@ -107,17 +107,19 @@ public class MusicPlayerActivity extends AppCompatActivity {
     private void PlayNextSong()
     {
         if(MyMediaPlayer.currentIndex==songsList.size()-1)
-            return;
-        MyMediaPlayer.currentIndex +=1;
-        mediaPlayer.reset();
-        setResourcesWithMusic();
+        {   MyMediaPlayer.currentIndex = 0;}
+        else { MyMediaPlayer.currentIndex +=1; }
+            mediaPlayer.reset();
+            setResourcesWithMusic();
 
 
     } private void PlayPreviousSong()
     {
         if(MyMediaPlayer.currentIndex==0)
-            return;
-        MyMediaPlayer.currentIndex -=1;
+        {
+            MyMediaPlayer.currentIndex = songsList.size()-1;
+        }
+        else {MyMediaPlayer.currentIndex -=1;}
         mediaPlayer.reset();
         setResourcesWithMusic();
     }
@@ -129,9 +131,9 @@ public class MusicPlayerActivity extends AppCompatActivity {
             pausePlay.setImageResource(R.drawable.ic_baseline_play_circle_outline_24);
 
         }
-        else{ mediaPlayer.start();
+        else{
+            mediaPlayer.start();
             pausePlay.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24);
-
         }
     }
     public static String convertToMMSS(String duration)

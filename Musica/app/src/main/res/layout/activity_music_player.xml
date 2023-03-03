@@ -4,32 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F4545"
+    android:background="#0E0E0E"
     tools:context=".MusicPlayerActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/song_title"
-    android:ellipsize="marquee"
-    android:text="Название песни"
-    android:singleLine="true"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    android:layout_margin="20dp"
-    android:padding="20dp"
-    android:fontFamily="@font/gnyrwn971"
-/>
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/gnyrwn971"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:text="Название песни"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 <ImageView
     android:layout_width="240dp"
     android:layout_height="240dp"
-    android:src="@drawable/nota2"
     android:padding="20dp"
     android:layout_centerHorizontal="true"
     android:id="@+id/music_icon_big"
     android:layout_above="@id/controls"
     android:fontFamily="@font/gnyrwn971"
-
+    android:src="@drawable/image_pica"
     />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,18 +95,19 @@
                 android:layout_alignParentEnd="true"
                 android:id = "@+id/next"
                 />
+
             <ImageView
+                android:id="@+id/pause_play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_pause_circle_outline_24"
-                android:layout_centerVertical="true"
                 android:layout_centerInParent="true"
-                android:id = "@+id/pause_play"
-                />
+                android:src="@drawable/ic_baseline_pause_circle_outline_24" />
+
         </RelativeLayout>
 
 
-        </RelativeLayout>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

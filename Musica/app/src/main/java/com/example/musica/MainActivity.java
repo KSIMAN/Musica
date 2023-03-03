@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.media.AudioMetadata;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             AudioModel songData = new AudioModel(cursor.getString(1),cursor.getString(0),cursor.getString(2));
             if(new File(songData.getPath()).exists())
             songsList.add(songData);
+
         }
         loadBar.setVisibility(View.INVISIBLE);
         if(songsList.size()==0)

@@ -12,18 +12,23 @@
     >
 
     <TextView
-        android:fontFamily="@font/gnyrwn971"
         android:id="@+id/songs_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:padding="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+        android:fontFamily="@font/gnyrwn971"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="Треки"
-        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,11 +44,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/songs_text"
-        android:padding="15dp"
-        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
         android:fontFamily="@font/gnyrwn971"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/loading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/songs_text" />
 
